@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for WebKit browsers */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.on-click {
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.on-click:hover {
+  background-color: #f1f5f9;
+  /* Tailwind's hover:bg-gray-200 equivalent */
+}
+
+.on-click:active {
+  background-color: #e2e8f0;
+  /* Background color when clicked */
+}
+
+.on-click-amzn {
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.on-click-amzn:hover {
+  background-color: #16a34a;
+  /* Tailwind's hover:bg-gray-200 equivalent */
+}
+
+.on-click-amzn:active {
+  background-color: #22c55e;
+  /* Background color when clicked */
+}
+
+.on-click-sidebar {
+  transition: background-color 0.3s ease;
+  /* Smooth transition */
+}
+
+.on-click-sidebar:hover {
+  background-color: #f1f5f9;
+  /* Tailwind's hover:bg-gray-200 equivalent */
+}
+
+.on-click-sidebar:active {
+  background-color: #e2e8f0;
+  /* Background color when clicked */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 23rem;
+  /* Ensure this matches the width in the component */
+}
+
+.max-h-custom {
+  max-height: calc(100vh - 13.5rem);
+}
+
+.max-h-custom1 {
+  max-height: calc(100vh - 16.5rem);
+}
+
+.min-h-custom1 {
+  min-height: 80vh;
+}
+
+.max-h-custom2 {
+  max-height: 70vh;
+}
+
+.h-screen-nonav {
+  min-height: calc(100vh - 4rem);
+}
+
+.custom-drop-shadow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.custom-drop-shadow2 {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Green Loader */
+.green-loader {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #15803d;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+/* Green Loader */
+.green-loader-lg {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #15803d;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+/* White Loader */
+.white-loader {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+/* Black Loader */
+.black-loader {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
